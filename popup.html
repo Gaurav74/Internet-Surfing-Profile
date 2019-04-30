@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEB PROFILE </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/18.png" height="10px">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/css/master.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+   <script type="text/javascript" src="engine1/jquery.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+
+
+</head>
+
+<body>
+<style>
+.page
+{
+  width: 520px;
+  height: 100%;
+  position:relative;
+  background-color:white;
+}
+.page_body
+{
+  background-color:#aed6f1;
+}
+.top
+{
+  height:70px;
+  background-color: #2e86c1;
+  margin-top: -20px;
+}
+  .top h3
+  {
+    font-family:rockwell;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+  padding-top: 15px;
+  }
+  .well
+  {
+    border-radius: 0px;
+  height: 220px; width: 495px;
+    padding: 10px;
+    text-decoration: none;
+    margin:10px auto;
+    border: none;
+    background-color:white;
+    color:black;
+    margin-bottom: 20px;
+  }
+  .heading_topsite
+  {
+    font-family:cosmic sans-serif;
+    font-size: 16px;
+    color:white;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    background-color:#aed6f1;
+    letter-spacing: 2px;
+  }
+  .heading_topsite a
+  {
+    color:#873600;
+  }
+    .heading_topsite:hover a
+    {
+      color: black;
+    }
+</style>
+  <div class="page">
+<div class="page_body">
+  <div class="top">
+      <h3>TOP USED URLs :</h3>
+    </div><br>
+    <div class="heading_topsite">
+      <div class="well">
+        <div id="topSite"></div><br>
+      </div>
+    </div>
+    <style>
+    #topSite ol li{  color:#873600; }
+#topSite ol li:hover
+{
+   color:black;
+}
+  .privacy_heading .well
+  {
+    height:50px;
+      background-color: #2e86c1;
+      margin-top: 250px;
+      padding: 0px;
+      width: 100%;
+  }
+  .privacy_heading .well h4
+  {
+    font-family: Chicle;
+    letter-spacing: 2px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .services
+  {
+    padding-left: 20px;
+  }
+  .websites
+  {
+    padding-left: 20px;
+  }
+  .col-lg-8
+  {
+    background-color:;
+    float:left;
+    text-decoration: strong;
+    letter-spacing: 2px;
+      font-family: cosmic sans-serif;
+      font-size: 18px;
+  }
+  .col-lg-4
+  {
+    background-color:;
+    float:right;
+    margin-right:10px;
+    text-decoration: strong;
+    font-family: cosmic sans-serif;
+    font-size: 18px;
+  }
+  #privacy{
+    background-color:#aed6f1;
+    margin-top: -20px;
+  }
+  #privacy .row
+  {
+    border-bottom:1px solid #2123FD;
+    cursor: pointer;
+  }
+  #privacy .row:hover
+  {
+    transition:.4s ease;
+    background-color:white;
+  }
+    </style>
+    </div>
+<div class="privacy_heading">
+  <div class="well">
+      <h4>PRIVACY & Recommendation -:</h4>
+  </div>
+</div>
+    <div id="privacy">
+      <div class="services">
+        <div class="row">
+          <div class="col-lg-8">
+              <h5 class="serviceColor">Alternate Error Page Enabled : </h5>
+          </div>
+          <div class="col-lg-4">
+              <div id="alternateErrorPagesEnabled" class="serviceColorText"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+              <h5 class="serviceColor">Autofill Credit Card Enabled : </h5>
+                <h5 id="recommendCreditCard" style="color:red;"></h5>
+          </div>
+          <div class="col-lg-4">
+              <div id="autofillCreditCardEnabled" class="serviceColorText"></div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+              <h5 class="serviceColor">Password Saving Enabled : </h5>
+                <h5 id="recommendPasswordSaving" style="color:red;"></h5>
+          </div>
+          <div class="col-lg-4">
+            <div id="passwordSavingEnabled" class="serviceColorText"></div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+              <h5 class="serviceColor">Safe Browsing Enabled :  </h5>
+              <h5 id="recommendSafeBrowsing" style="color:red;"></h5>
+          </div>
+          <div class="col-lg-4">
+            <div id="safeBrowsingEnabled" class="serviceColorText"></div>
+          </div>
+        </div>
+
+      <div class="row">
+          <div class="col-lg-8">
+                <h5 class="serviceColor">Search Suggest Enabled: </h5>
+          </div>
+          <div class="col-lg-4">
+                <div id="searchSuggestEnabled" class="serviceColorText"></div>
+          </div>
+     </div>
+</div>
+
+      <div class="services">
+        <div class="row">
+            <div class="col-lg-8">
+                  <h5 class="serviceColor">Third Party Cookies Allowed: </h5>
+            </div>
+            <div class="col-lg-4">
+                  <div id="thirdPartyCookiesAllowed" class="serviceColorText"></div>
+            </div>
+       </div>
+
+       <div class="row">
+         <div class="col-lg-8">
+             <h5 class="serviceColor">Do Not Track Enabled:  </h5>
+              <h5 id="recommendTrackEnabled" style="color:red;"></h5>
+         </div>
+         <div class="col-lg-4">
+           <div id="doNotTrackEnabled" class="serviceColorText"></div>
+
+         </div>
+       </div>
+
+
+       <div class="row">
+         <div class="col-lg-8">
+             <h5 class="serviceColor">Network Prediction Enabled : </h5>
+             <h5 id="recommendSafeBrowsing" style="color:red;"></h5>
+         </div>
+         <div class="col-lg-4">
+            <div id="networkPredictionEnabled" class="serviceColorText"></div>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col-lg-8">
+             <h5 class="serviceColor">WebRTC IP Handling Policy : </h5>
+             <h5 id="recommendSafeBrowsing" style="color:red;"></h5>
+         </div>
+         <div class="col-lg-4">
+            <div id="webRTCIPHandlingPolicy" class="serviceColorText"></div>
+         </div>
+       </div>
+      </div>
+    </div>
+
+<style>
+.time
+{
+  height: 50px;
+  background-color:#2e86c1;
+
+}
+.today
+{
+  float:left;
+  margin-left:80px;
+  font-family: cosmic sans-serif;
+  font-size: 18px;
+
+  color: white;
+}
+.today input
+{
+  margin-left: 20px;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.this_week
+{
+  float:left;
+  margin-left:80px;
+  font-family: cosmic sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  color: white;
+}
+.this_week input
+{
+  margin-left: 20px;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.writedata ul li
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+text-align: center;
+  list-style: none;
+
+
+}
+.writedata
+{
+    background-color:#2e86c1;
+    height: 50px;
+    font-family: cosmic sans-serif;
+margin-top: -10px;
+ padding-top: 5px;
+    color: white;
+}
+div.link
+{
+  margin-left: -10px;
+}
+
+</style>
+
+    <div id="sort">
+      <div class="time">
+        <div class="today">
+            <b>TODAY</b> <input type="radio" checked name="timeChoose" value="today">
+        </div>
+        <div class="this_week" >
+            <b>THIS WEEK</b> <input type="radio" name="timeChoose" value="week">
+        </div>
+      </div>
+
+      <div id="writeData"></div>
+
+      <div class="writedata">
+        <ul>
+          <li>
+              <div class="link"><b>LINK: </b> <input type="radio" name="transition" value="link"> </div>
+          </li>
+            <li>
+                <div><b>TYPED: </b> <input type="radio" name="transition" value="typed"> </div>
+            </li>
+              <li>
+                  <div><b>RELOAD: </b> <input type="radio" name="transition" value="reload"> </div>
+              </li>
+                <li>
+                    <div><b>BLOCKED: </b> <input type="radio" name="transition" value="blocked"> </div>
+                </li>
+        </ul>
+      </div>
+      <div id="urlTable"></div>
+<style>
+#urlTable{
+  background-color:#aed6f1;
+
+}
+th
+{
+  padding: 10px;
+  font-family: cosmic sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-style: strong;
+}
+td
+{
+  padding-left: 10px;
+  font-family: cosmic sans-serif;
+  font-size: 14px;
+  text-align:left;
+  font-style: strong;
+  cursor: pointer;
+
+}
+tr{
+  padding-top: 10px;
+}
+tr:hover{
+  background-color: white;
+  transition: 0.4s ease;
+}
+</style>
+    </div>
+  </div><!--For page-->
+
+  <script src="popup.js" charset="utf-8">
+  </script>
+</body>
+
+</html>
